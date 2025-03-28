@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    align-items: center;
+  }
+  
+  .about .text {
+    max-width: 50%;
+  }
+  
+  .about .image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  

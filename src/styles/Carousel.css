@@ -1,0 +1,36 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: #111111;
+    margin: 20px 0;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    animation-play-state: running; /* A animação está rodando por padrão */
+    mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
+  }
+  
+  .carousel img {
+    margin-right: 15px;
+  }
+  
+  .carousel-container:hover .carousel {
+    animation-play-state: paused; /* A animação pausa quando o mouse está sobre o carrossel */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
