@@ -6,8 +6,7 @@ function About() {
       <div className="text">
         <h2>Sobre Mim</h2>
         <p>
-          Sou desenvolvedor com experiência em várias tecnologias. Tenho paixão por criar soluções
-          inovadoras e eficientes. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sou desenvolvedor focado em Frontend e design. Sou português mas sou fluente em inglês e Google Tradutor kkk, fica á vontade para me contactar e vamos criar algo incrivel juntos. Atualmente estou no curso de Programador de Informatica na Escola Profissional do Fundão. Sou apaixonado por UI e UX e aprendo algo novo todos os dias para ser o melhor e mais eficiente.
         </p>
       </div>
       <div className="image">
