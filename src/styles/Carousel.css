@@ -9,7 +9,7 @@
   display: flex;
   gap: 20px; /* Espaço entre ícones */
   width: max-content; /* Permite scroll contínuo */
-  animation: autoRun 20s linear infinite;
+  animation: autoRun 40s linear infinite;
 }
 
 .slider .item {
