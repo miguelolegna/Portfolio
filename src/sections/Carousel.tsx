@@ -4,7 +4,6 @@ function Carousel() {
   const icons = [
     { name: "vscode", link: "https://code.visualstudio.com/" },
     { name: "linux", link: "https://www.linux.org/" },
-    { name: "firefox", link: "https://www.mozilla.org/firefox/" },
     { name: "html5", link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
     { name: "css3", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
     { name: "tailwindcss", link: "https://tailwindcss.com/" },

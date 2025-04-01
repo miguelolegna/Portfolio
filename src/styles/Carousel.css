@@ -21,8 +21,8 @@
 }
 
 .slider .item img {
-  width: 40px; /* Corrige o tamanho dos ícones */
-  height: 40px;
+  width: 45px; /* Corrige o tamanho dos ícones */
+  height: 45px;
   transition: transform 0.2s ease-in-out;
 }
 

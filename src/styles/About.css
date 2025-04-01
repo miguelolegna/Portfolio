@@ -1,16 +1,47 @@
 .about {
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem 2rem;
-    align-items: center;
-  }
-  
-  .about .text {
-    max-width: 50%;
-  }
-  
-  .about .image img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 10%;
+  color: #ddd; /* Cor base do texto */
+}
+
+.about .text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about .text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* Título branco para máximo contraste */
+  margin-bottom: 15px;
+}
+
+.about .text p {
+  font-size: 1.1rem;
+  font-weight: 300; /* Texto mais fino para melhor leitura */
+  color: #ccc; /* Tom de branco suave */
+  line-height: 1.6;
+}
+
+.about .text strong {
+  font-weight: 500; /* Dá mais destaque sem exagerar */
+  color: #fff; /* Deixa as palavras-chave mais visíveis */
+}
+
+.about .text em {
+  font-style: italic;
+  color: #bbb; /* Tom mais suave para diferenciação */
+}
+
+.about .image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+

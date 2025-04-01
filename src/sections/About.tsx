@@ -6,11 +6,17 @@ function About() {
       <div className="text">
         <h2>Sobre Mim</h2>
         <p>
-          Sou desenvolvedor focado em Frontend e design. Sou português mas sou fluente em inglês e Google Tradutor kkk, fica á vontade para me contactar e vamos criar algo incrivel juntos. Atualmente estou no curso de Programador de Informatica na Escola Profissional do Fundão. Sou apaixonado por UI e UX e aprendo algo novo todos os dias para ser o melhor e mais eficiente.
+          Olá! Sou um desenvolvedor focado em <b>Frontend</b> e <b>Design</b>, apaixonado por <b>UI/UX</b> e sempre em busca de novas formas de tornar interfaces mais <b>intuitivas</b> e <b>eficientes</b>.
+        </p>
+        <p>
+          Atualmente, estou a estudar no curso de <b>Programador de Informática</b> na Escola Profissional do Fundão e todos os dias aprendo algo novo para aprimorar minhas habilidades.
+        </p>
+        <p>
+          Falo português e inglês (e conto com a ajuda do <em>Google Tradutor</em> quando necessário). Sinta-se à vontade para entrar em contacto para criar algo <b>incrível</b> juntos!
         </p>
       </div>
       <div className="image">
-        <img src="/my-image.jpg" alt="Foto" />
+        <img src="/23069ca2-38d5-4e65-8bc6-2444d9c8ee5c.jpg" alt="Foto" />
       </div>
     </div>
   );

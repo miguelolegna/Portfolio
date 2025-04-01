@@ -8,7 +8,7 @@ type NavbarProps = {
 function Navbar({ scrollToSection, activeSection }: NavbarProps) {
   return (
     <nav className="navbar">
-      <h1>Meu Portfólio</h1>
+      <h1>Miguel Correia</h1>
       <ul>
         <li
           className={activeSection === "about" ? "active" : ""}
