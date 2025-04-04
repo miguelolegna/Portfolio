@@ -1,10 +1,11 @@
 .about {
+  margin-top: -130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   padding: 50px 10%;
-  color: #ddd; /* Cor base do texto */
+  color: var(--text-color);
 }
 
 .about .text {
@@ -15,25 +16,25 @@
 .about .text h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff; /* Título branco para máximo contraste */
+  color: var(--heading-color);
   margin-bottom: 15px;
 }
 
 .about .text p {
   font-size: 1.1rem;
-  font-weight: 300; /* Texto mais fino para melhor leitura */
-  color: #ccc; /* Tom de branco suave */
+  font-weight: 300;
+  color: var(--text-muted);
   line-height: 1.6;
 }
 
 .about .text strong {
-  font-weight: 500; /* Dá mais destaque sem exagerar */
-  color: #fff; /* Deixa as palavras-chave mais visíveis */
+  font-weight: 500;
+  color: var(--highlight-color);
 }
 
 .about .text em {
   font-style: italic;
-  color: #bbb; /* Tom mais suave para diferenciação */
+  color: var(--italic-color);
 }
 
 .about .image img {
@@ -43,5 +44,3 @@
   object-fit: cover;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-
-

@@ -12,7 +12,7 @@ function Carousel() {
     { name: "python", link: "https://www.python.org/" },
     { name: "react", link: "https://react.dev/" },
     { name: "flask", link: "https://flask.palletsprojects.com/" },
-    { name: 'vitejs', link: "https://vite.dev/"},
+    { name: "vitejs", link: "https://vite.dev/" },
     { name: "bootstrap", link: "https://getbootstrap.com/" },
     { name: "c", link: "https://en.wikipedia.org/wiki/C_(programming_language)" },
     { name: "cplusplus", link: "https://isocpp.org/" },
@@ -26,22 +26,25 @@ function Carousel() {
   ];
 
   return (
-    <div className="slider">
-      <div className="list">
-        {[...icons, ...icons].map((icon, index) => (
-          <a
-            key={index}
-            className="item"
-            href={icon.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon.name}/${icon.name}-original.svg`}
-              alt={`${icon.name} logo`}
-            />
-          </a>
-        ))}
+    <div className="carousel-container">
+      <h2 className="carousel-title">O Meu Toolkit de Desenvolvimento</h2>
+      <div className="slider">
+        <div className="list">
+          {[...icons, ...icons].map((icon, index) => (
+            <a
+              key={index}
+              className="item"
+              href={icon.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${icon.name}/${icon.name}-original.svg`}
+                alt={`${icon.name} logo`}
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

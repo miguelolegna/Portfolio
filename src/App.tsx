@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Carousel from "./sections/Carousel";
 import Projects from "./sections/Projects";
 import Certificates from "./sections/Certificates";
+import ToggleSwitch from "./components/ToggleSwitch";
 import "./styles/global.css";
 
 function App() {
@@ -16,8 +17,11 @@ function App() {
   };
 
   return (
-    <div style={{ backgroundColor: "#111111", color: "white" }}>
+    <div>
       <Navbar scrollToSection={scrollToSection} activeSection={activeSection} />
+      <section id="switch" style={{ right: "20px" }}>
+        <ToggleSwitch />
+      </section>
       <section id="about">
         <About />
       </section>

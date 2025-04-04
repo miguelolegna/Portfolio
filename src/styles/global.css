@@ -1,17 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Tema Escuro (Padrão) */
+:root {
+  /* Fundo e texto */
+  --bg-color: #111111; /* Fundo escuro */
+  --text-color: #ddd; /* Texto claro */
+  --text-muted: #ccc; /* Texto suave */
+  --text-soft: #bbb; /* Texto mais suave */
+
+  /* Destaques */
+  --heading-color: #fff; /* Títulos em branco */
+  --highlight-color: #fff; /* Cor de destaque */
+  --italic-color: #bbb; /* Texto em itálico suave */
+}
+
+/* Tema Claro */
+.dark-mode {
+  --bg-color: #111111;
+  --text-color: #ddd;
+  --text-muted: #ccc;
+  --text-soft: #bbb;
+
+  --heading-color: #fff;
+  --highlight-color: #fff;
+  --italic-color: #bbb;
+}
+
+/* Tema Claro (quando removido o modo escuro) */
+.light-mode {
+  --bg-color: #FAF9F6; /* Fundo claro */
+  --text-color: #222; /* Texto escuro */
+  --text-muted: #555; /* Texto suave */
+  --text-soft: #888; /* Texto mais suave */
+
+  --heading-color: #111; /* Títulos escuros */
+  --highlight-color: #000; /* Cor de destaque */
+  --italic-color: #666; /* Texto em itálico */
+}
+
+/* Estilos Globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #111111;
-    color: white;
-  }
-  
-  section {
-    padding: 2rem 0;
-    margin-top: 80px; /* Para não sobrepor com a navbar */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+  transition: color 0.5s ease;
+}
+
+section {
+  transition: background-color 0.5s ease;
+}
