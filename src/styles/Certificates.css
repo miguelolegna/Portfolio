@@ -1,25 +1,124 @@
 .certificates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .certificate-card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-  }
-  
-  .certificate-card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .certificate-card:hover {
-    transform: scale(1.05);
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cards */
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo dentro do card */
+  justify-content: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px; /* Define um tamanho fixo para os cards */
+  height: 350px; /* Define uma altura fixa para os cards */
+}
+
+.certificate-card img {
+  width: 80%; /* Ajusta o tamanho da imagem */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-image {
+  flex: 1;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.modal-content {
+  flex: 2;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.carousel-container {
+  text-align: center;
+  margin: 0 auto; /* Centraliza o carrossel */
+  padding: 20px 0; /* Adiciona espaçamento interno */
+  background-color: var(--bg-color); /* Opcional: cor de fundo para destacar a seção */
+}
+
+.slider {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  position: relative; /* Garante que o hover só afeta o carrossel */
+}
+
+.slider .list {
+  display: flex;
+  gap: 20px; /* Espaço entre ícones */
+  width: max-content; /* Permite scroll contínuo */
+  animation: autoRun 40s linear infinite;
+}
+
+.slider:hover > .list {
+  animation-play-state: paused; /* Pausa a animação apenas quando o cursor está diretamente sobre o carrossel */
+}

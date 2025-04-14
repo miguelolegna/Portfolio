@@ -12,8 +12,14 @@ function App() {
 
   const scrollToSection = (section: string) => {
     const element = document.getElementById(section);
-    element?.scrollIntoView({ behavior: "smooth" });
-    setActiveSection(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(section);
+
+      // Adiciona uma classe temporária para destacar a seção
+      element.classList.add("highlight");
+      setTimeout(() => element.classList.remove("highlight"), 1000);
+    }
   };
 
   return (

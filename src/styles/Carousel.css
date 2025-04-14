@@ -2,6 +2,7 @@
   width: 100%;
   height: 60px;
   overflow: hidden;
+  position: relative; /* Garante que o hover só afeta o carrossel */
   mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
 
@@ -38,9 +39,9 @@
   }
 }
 
-/* Pausa a animação ao passar o mouse */
-.slider:hover .list {
-  animation-play-state: paused;
+/* Pausa a animação quando o cursor esta em cima */
+.slider:hover > .list {
+  animation-play-state: paused; /* Pausa a animação apenas quando o cursor está diretamente sobre o carrossel */
 }
 
 .carousel-container {

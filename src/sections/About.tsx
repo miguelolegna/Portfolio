@@ -16,7 +16,7 @@ function About() {
         </p>
       </div>
       <div className="image">
-        <img src="/23069ca2-38d5-4e65-8bc6-2444d9c8ee5c.jpg" alt="Foto" />
+        <img src="/23069ca2-38d5-4e65-8bc6-2444d9c8ee5c.jpg" alt="Foto" loading="lazy" />
       </div>
     </div>
   );

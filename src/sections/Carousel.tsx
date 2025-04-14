@@ -14,7 +14,7 @@ function Carousel() {
     { name: "flask", link: "https://flask.palletsprojects.com/" },
     { name: "vitejs", link: "https://vite.dev/" },
     { name: "bootstrap", link: "https://getbootstrap.com/" },
-    { name: "c", link: "https://en.wikipedia.org/wiki/C_(programming_language)" },
+    { name: "c", link: "https://www.c-language.org/" },
     { name: "cplusplus", link: "https://isocpp.org/" },
     { name: "canva", link: "https://www.canva.com/" },
     { name: "fastapi", link: "https://fastapi.tiangolo.com/" },
